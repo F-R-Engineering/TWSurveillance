@@ -9,4 +9,4 @@ function getHTML(url) {
     xhr.send();
 };
 
-consol.log(getHTML('https://zz1.tribalwars.works/game.php?village=3106&screen=report'));
+console.log(getHTML('https://zz1.tribalwars.works/game.php?village=3106&screen=report'));
