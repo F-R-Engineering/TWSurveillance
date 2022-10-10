@@ -1,16 +1,12 @@
-function getHTML(url, callback) {
+function getHTML(url) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
-            callback(xhr.responseText);
+            return xhr.responseText;
         }
     }
     xhr.send();
 };
 
-function callback(data) {
-    console.log(data);
-};
-
-getHTML('https://zz1.tribalwars.works/game.php?village=3106&screen=report', callback);
+consol.log(getHTML('https://zz1.tribalwars.works/game.php?village=3106&screen=report'));
